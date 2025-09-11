@@ -1,0 +1,22 @@
+// 全局变量
+@import './variables.scss';
+// ele样式覆盖
+// 工具函数
+@import './element-ui.scss';
+@import './mixin.scss';
+//适配
+@import './media.scss';
+//通用配置
+@import './normalize.scss';
+
+@import './fonts.scss';
+
+a{
+  text-decoration: none;
+  color:#333;
+}
+*{
+  outline: none;
+}
+//滚动条样式
+@include scrollBar;
