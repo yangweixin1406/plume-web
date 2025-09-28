@@ -8,6 +8,11 @@ Vue.use(Router)
 const router = new Router({
   // mode: 'history',
   routes: [
+    {
+      path: '/',
+      name: 'Index',
+      component: () => import('@/views/index.vue')
+    },
   ]
 })
 
