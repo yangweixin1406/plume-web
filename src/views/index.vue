@@ -58,9 +58,9 @@
       </div>
 
       <div class="pp-range-list">
-        <div class="pp-range-item" v-for="item in list" :key="item">
-          <p style="font-size: 22px; margin-bottom: 5px;">191889</p>
-          <p style="color: #747474;">{{ item }} PP</p>
+        <div class="pp-range-item" v-for="item in list" :key="item.name">
+          <p style="font-size: 22px; margin-bottom: 5px;">{{ item.num }}</p>
+          <p style="color: #747474;">{{ item.name }} PP</p>
         </div>
       </div>
     </div>
@@ -71,7 +71,14 @@
 export default {
   data() {
     return {
-      list: ['0-10000', '10000-50000', '50000-100000', '100000-200000', '200000-300000', 'over 3000000']
+      list: [
+        { name: '300,000+', num: 4 },
+        { name: '200,000 - 299,999', num: 27 },
+        { name: '100,000 - 199,999', num: 620 },
+        { name: '50,000 - 99,999', num: 4533 },
+        { name: '10,000 - 49,999', num: 47990 },
+        { name: '1 - 9,999', num: 246333 }
+      ]
     }
   }
 }
