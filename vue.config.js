@@ -35,16 +35,10 @@ module.exports = {
   devServer: {
     port: 1888,
     proxy: {
-      '/workbench': {
+      '/': {
         //本地服务接口地址
-        target: 'http://10.10.10.42:8091',
-        // target: 'http://10.10.10.56:8091',
-        // target: 'http://223.240.73.195:8415/api',
-        // target: 'http://134.84.202.142:9001/api',
-        ws: true,
-        pathRewrite: {
-          '^/workbench': ''
-        }
+        target: 'http://192.168.1.3:8000',
+        ws: true
       }
     }
   }
