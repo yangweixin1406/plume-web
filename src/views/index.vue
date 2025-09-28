@@ -5,7 +5,7 @@
         <img src="@/static/images/plume-logo.png" alt="">
         <div style="display: flex; flex-direction: column;">
           <span style="font-weight: 700;">PLUME Season 2 Data Overview</span>
-          <span style="font-size: 15px; color: #2e2e2e;">(Only count data whose pp number is not 0)</span>
+          <span style="font-size: 15px; color: #2e2e2e;">(Only count data whose pp number is greater than 0)</span>
         </div>
       </header>
       
