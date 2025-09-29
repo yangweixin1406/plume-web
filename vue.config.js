@@ -35,10 +35,13 @@ module.exports = {
   devServer: {
     port: 1888,
     proxy: {
-      '/': {
+      '/plume': {
         //本地服务接口地址
-        target: 'http://192.168.1.3:8000',
-        ws: true
+        target: 'http://localhost:8000',
+        ws: true,
+        pathRewrite: {
+          '^/plume': ''
+        }
       }
     }
   }
